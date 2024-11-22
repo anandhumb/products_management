@@ -1,7 +1,8 @@
 <x-layout>
     <div class="main">
         <form action="{{ route('products.update',$productu->id) }}" method="POST">
-            @csrf
+        @method('PUT')    
+        @csrf
             <div class="form-row">
                 <div class="form-group">
                     <label for="">Product Name</label>

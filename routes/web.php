@@ -11,8 +11,8 @@ Route::prefix('products/')->name('products.')->group(function(){
     Route::get('/',[ProductController::class,'index'])->name('index');
     Route::get('/create',[ProductController::class,'create'])->name('create');
     Route::post('/',[ProductController::class,'store'])->name('store');   
-    Route::get('edit/{product}',[ProductController::class,'edit']);
-    Route::post('/{product}',[ProductController::class,'update'])->name('update'); 
+    Route::get('edit/{product}',[ProductController::class,'edit'])->name('edit');
+    Route::PUT('/{product}',[ProductController::class,'update'])->name('update'); 
     Route::delete('/{product}',[ProductController::class,'destroy'])->name('destroy');
 });
 // Route::resource('products', ProductController::class)->only([]);
