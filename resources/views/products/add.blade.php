@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="main">
+    <div class="">
         <form method="POST" action="{{ route('products.store') }}">
             @csrf
             <div class="form-row">
